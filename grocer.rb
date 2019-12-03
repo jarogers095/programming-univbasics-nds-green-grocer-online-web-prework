@@ -42,6 +42,7 @@ def apply_coupons(cart, coupons)
   # REMEMBER: This method **should** update cart
   
   pp coupons
+  puts "done"
 end
 
 def apply_clearance(cart)
