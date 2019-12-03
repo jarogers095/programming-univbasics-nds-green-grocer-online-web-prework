@@ -54,9 +54,12 @@ def apply_coupons(cart, coupons)
             count: coupon[:num]
           }
         )
-      #elsif (item_in_cart[:count] == coupon[:num])
-      #    item_in_cart[:item] = "#{coupon[:item]} W/COUPON"
-      #    item_in_cart[:price] = (coupon[:cost] / coupon[:num])
+      #Alternative alters original item instead of adding a new entry
+      #if number of items in cart is equal to the number of items 
+      #required by the coupon
+      '''elsif (item_in_cart[:count] == coupon[:num])
+          item_in_cart[:item] = "#{coupon[:item]} W/COUPON"
+          item_in_cart[:price] = (coupon[:cost] / coupon[:num])'''
       end
     end
   end 
