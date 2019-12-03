@@ -53,7 +53,7 @@ def apply_coupons(cart, coupons)
             clearance: item_in_cart[:clearance],
             count: coupon[:num]
           })
-      else if (item_in_cart[:count] == coupon[:num])
+      elsif (item_in_cart[:count] == coupon[:num])
           
       
     
