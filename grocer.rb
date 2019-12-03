@@ -52,10 +52,14 @@ def apply_coupons(cart, coupons)
             price: (coupon[:cost] / coupon[:num]),
             clearance: item_in_cart[:clearance],
             count: coupon[:num]
-          })
+          }
+        )
       elsif (item_in_cart[:count] == coupon[:num])
-          
-      
+          item_in_cart[:item] = "#{coupon[:item]} W/COUPON"
+          item_in_cart[:price] = (coupon[:cost] / coupon[:num])
+      end
+    end
+  end 
     
 end
 
